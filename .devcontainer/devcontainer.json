@@ -1,0 +1,32 @@
+{
+    "name": "budget-app",
+  
+    "dockerComposeFile": "docker-compose.yml",
+
+    "service": "budget-app",
+
+    // Set a container port to forward
+    "forwardPorts": [3000],
+  
+    // Add your project dependencies here (replace with your actual dependencies)
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "yoavbls.pretty-ts-errors"
+        ]
+      }
+    },
+  
+    // Set up volume mounts to access your code
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"
+    ],
+  
+    // Configure working directory
+    "remoteUser": "node",
+    "workspaceFolder": "/app"
+  }
+  
+  
