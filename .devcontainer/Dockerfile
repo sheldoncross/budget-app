@@ -38,5 +38,9 @@ RUN --mount=type=cache,target=/app/budget-app/node_modules \
 # Copy the rest of the application code to the working directory
 COPY . .
 
+# Install the application's dependencies
+RUN --mount=type=cache,target=/app/budget-app/node_modules \
+    yarn install 
+    
 # Expose the port your app listens on (e.g., 3000)
 EXPOSE 3000

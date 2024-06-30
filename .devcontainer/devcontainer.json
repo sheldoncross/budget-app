@@ -14,7 +14,8 @@
         "extensions": [
           "dbaeumer.vscode-eslint",
           "esbenp.prettier-vscode",
-          "yoavbls.pretty-ts-errors"
+          "yoavbls.pretty-ts-errors",
+          "github.vscode-github-actions"
         ]
       }
     },
@@ -26,7 +27,8 @@
   
     // Configure working directory
     "remoteUser": "node",
-    "workspaceFolder": "/app"
+    "workspaceFolder": "/app",
+    "postStartCommand": "cd /app/budget-app && yarn install"
   }
   
   

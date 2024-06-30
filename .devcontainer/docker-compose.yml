@@ -9,4 +9,4 @@ services:
     ports:
       - "3000:3000" # Map port 3000 on the host to port 3000 in the container
     volumes:
-      - .:/app # Mount the project directory on the host to /app in the container
+      - ..:/app # Mount the project directory on the host to /app in the container
