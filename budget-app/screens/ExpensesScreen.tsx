@@ -1,4 +1,4 @@
-import { View, StyleSheet, SafeAreaView, Platform, StatusBar, Pressable } from 'react-native';
+import { View, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
 import ExpenseItem  from '../components/ExpenseItem';
 
